@@ -30,6 +30,13 @@ __pycache__/
 *.sqlite3
 data/*
 !data/.gitkeep
+# MITRE reference datasets
+!data/reference/
+data/reference/*
+!data/reference/.gitkeep
+!data/reference/enterprise-attack.json
+!data/reference/d3fend.csv
+!data/reference/d3fend-full-mappings.csv
 
 # Development backups
 backups/
