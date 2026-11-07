@@ -1,0 +1,91 @@
+# Secrets and environment files
+.env
+.env.*
+!.env.example
+secrets/
+credentials/
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Python virtual environments
+.aegis/
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Databases and runtime data
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+data/*
+!data/.gitkeep
+
+# Development backups
+backups/
+*.backup
+*.backup-*
+*.bak
+*.bak*
+*.before-*
+*.before_*
+*.pre-*
+*.pre_*
+*.working-backup
+
+# Temporary files and logs
+*.log
+*.swp
+*.swo
+*.tmp
+.cache/
+tmp/
+temp/
+
+# Packet captures
+*.pcap
+*.pcapng
+*.cap
+
+# Downloaded model files
+*.onnx
+*.pt
+*.pth
+*.h5
+*.keras
+models/downloaded/
+
+# IDE and operating system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Build files
+build/
+dist/
+*.egg-info/
+
+# Previous configuration copies
+.gitignore.before-web
+requirements.txt.before-web
+
+# Accidental malformed files
+collectors?linux_auth.py
+detection?__init__.py
+detection?ssh_detection.py
+
+# Local development artifacts
+collectors/_-init__.py
+monitor/
+aegistrace_unified_defensive_patch.py
